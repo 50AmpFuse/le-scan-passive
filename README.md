@@ -13,6 +13,14 @@ le-scan-passive -i hci0
 ```
 make
 ```
+### Dependencies:
+
+A few files from the BlueZ Bluetooth package are needed:
+* bluetooth.c
+* bluetooth.h
+* hci.c
+* hci.h
+* hci_lib.h
 
 ### Output:
 
