@@ -3,8 +3,8 @@
 # Compiler Flag
 CC=gcc
 # Object link
-TARGET  = hcitooladv
-OBJ_LIB = hcitooladv.o lib/bluetooth.o lib/hci.o
+TARGET  = le-scan-passive
+OBJ_LIB = le-scan-passive.o lib/bluetooth.o lib/hci.o
 EXT_LIB = 
 # Compiler
 all:$(OBJ_LIB)
@@ -17,7 +17,7 @@ all:$(OBJ_LIB)
 	@$(STRIP) $@
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c  -o $@ $<
+	$(CC) $(CFLAGS) -c -o $@ $<
 	
 clean:
 	rm -f $(TARTGET) *.o lib/*.o
