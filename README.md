@@ -1,5 +1,5 @@
 ### Bluetooth LE Passive Advertising monitor
-Based hcitool from BlueZ - Bluetooth protocol stack for Linux
+Based on hcitool from BlueZ - Bluetooth protocol stack for Linux
 ---
 
 ### Usage:
