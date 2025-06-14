@@ -7,6 +7,10 @@ Based on hcitool from BlueZ - Bluetooth protocol stack for Linux
 ```
 le-scan-passive -i hci0
 ```
+If errors occur as "Set scan parameters failed: Input/output error", try:
+```
+systemctl restart bluetooth.service
+```
 
 ### Build:
 
