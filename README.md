@@ -1,11 +1,11 @@
-### BLE Advertising monitor
+### Bluetooth LE Passive Advertising monitor
 Based hcitool from BlueZ - Bluetooth protocol stack for Linux
 ---
 
 ### Usage:
 
 ```
-hcitooladv lescan --passive --duplicates --advanced
+le-scan-passive -i hci0
 ```
 
 ### Build:
@@ -14,13 +14,11 @@ hcitooladv lescan --passive --duplicates --advanced
 make
 ```
 
-### String Format:
+### Output:
 
-"A4:C1:38:21:87:88-0201060f1695fe30585b05c988872138c1a408dd\n"
-
-| MAC          | Ad-data                                      | RSSI |
-| :----------: | -------------------------------------------- | ---- |
-| A4:C1:38:21:87:88 | 0201060f1695fe30585b05c988872138c1a408 |  dd  |
+| MAC          | RSSI | Payload with \<human readable type fields>       |
+| :----------: | ---- |---------------------------------------------- |
+| A4:C1:38:90:34:F2 |  -70 | \<FLAGS>06<SERVICE_DATA_UUID16>D2FC40002E0100028309033719 |
 
 
 
